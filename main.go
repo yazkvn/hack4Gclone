@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/thuanht567/libpsiphon"
+	"github.com/aztecrabbit/brainfuck-psiphon-pro-go/src/libpsiphon"
 	"github.com/aztecrabbit/libinject"
 	"github.com/aztecrabbit/liblog"
 	"github.com/aztecrabbit/libproxyrotator"
