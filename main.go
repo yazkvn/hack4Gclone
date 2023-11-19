@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/aztecrabbit/brainfuck-psiphon-pro-go/src/libpsiphon"
+	"github.com/thuanht567/libpsiphon"
 	"github.com/aztecrabbit/libinject"
 	"github.com/aztecrabbit/liblog"
 	"github.com/aztecrabbit/libproxyrotator"
@@ -66,14 +66,7 @@ func main() {
 	defaultConfig.Inject.Type = 2
 	defaultConfig.Inject.Rules = map[string][]string{
 		"akamai.net:80": []string{
-			"video.iflix.com",
-			"videocdn-2.iflix.com",
-			"iflix-videocdn-p1.akamaized.net",
-			"iflix-videocdn-p2.akamaized.net",
-			"iflix-videocdn-p3.akamaized.net",
-			"iflix-videocdn-p6.akamaized.net",
-			"iflix-videocdn-p7.akamaized.net",
-			"iflix-videocdn-p8.akamaized.net",
+			"125.235.36.177",
 		},
 	}
 	defaultConfig.Inject.Payload = ""
