@@ -8,7 +8,7 @@
 		"Port": "8989",
 		"Rules": {
 			"akamai.net:80": [
-				"125.235.36.177"
+				"103.82.24.247"
 			]
 		},
 		"Payload": "",
@@ -19,9 +19,9 @@
 	},
 	"PsiphonCore": 4,
 	"Psiphon": {
-		"CoreName": "psiphon-tunnel-core",
+		"CoreName": "YAZK TOOL",
 		"Tunnel": 1,
-		"Region": "SG",
+		"Region": "VN",
 		"Protocols": [
 			"FRONTED-MEEK-HTTP-OSSH",
 			"FRONTED-MEEK-OSSH"
