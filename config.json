@@ -19,7 +19,7 @@
 	},
 	"PsiphonCore": 4,
 	"Psiphon": {
-		"CoreName": "YAZK TOOL",
+		"CoreName": "psiphon-tunnel-core",
 		"Tunnel": 1,
 		"Region": "VN",
 		"Protocols": [
