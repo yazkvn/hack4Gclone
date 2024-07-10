@@ -17,12 +17,12 @@ import (
 )
 
 const (
-	appName        = "Brainfuck Tunnel"
-	appVersionName = "Psiphon Pro Go"
-	appVersionCode = "1.3.210109"
+	appName        = "Yazk Tunnel"
+	appVersionName = "Golang Server Version "
+	appVersionCode = "1.3.210109(Minh Le)"
 
-	copyrightYear   = "2020"
-	copyrightAuthor = "Aztec Rabbit"
+	copyrightYear   = "2024"
+	copyrightAuthor = "Yazk Hoang"
 )
 
 var (
