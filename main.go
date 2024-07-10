@@ -132,8 +132,8 @@ func main() {
 
 	time.Sleep(200 * time.Millisecond)
 
-	liblog.LogInfo("Domain Fronting running on port "+Inject.Config.Port, "INFO", liblog.Colors["G1"])
-	liblog.LogInfo("Proxy Rotator running on port "+ProxyRotator.Config.Port, "INFO", liblog.Colors["G1"])
+	liblog.LogInfo("Đang Kết Nối Tới Cổng "+Inject.Config.Port, "INFO", liblog.Colors["G1"])
+	liblog.LogInfo("Đang Tạo Kết Nối Proxy "+ProxyRotator.Config.Port, "INFO", liblog.Colors["G1"])
 
 	if _, err := os.Stat(libutils.RealPath(config.Psiphon.CoreName)); os.IsNotExist(err) {
 		liblog.LogInfo(
