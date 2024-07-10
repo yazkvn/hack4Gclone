@@ -143,7 +143,7 @@ func (p *Psiphon) Start() {
 		)
 	}
 
-	p.LogInfo("Connecting", liblog.Colors["G1"])
+	p.LogInfo("Đang Kết Nối", liblog.Colors["G1"])
 
 	for Loop {
 		p.KuotaData.Port[p.ListenPort] = make(map[string]float64)
@@ -200,10 +200,10 @@ func (p *Psiphon) Start() {
 					p.TunnelConnected++
 					if p.Config.Tunnel > 1 {
 						diagnosticID := line["data"].(map[string]interface{})["diagnosticID"].(string)
-						p.LogInfo(fmt.Sprintf("Connected (%s)", diagnosticID), liblog.Colors["Y1"])
+						p.LogInfo(fmt.Sprintf("Đã Kết Nối (%s)", diagnosticID), liblog.Colors["Y1"])
 					}
 					if p.TunnelConnected == p.Config.Tunnel {
-						p.LogInfo("Connected", liblog.Colors["Y1"])
+						p.LogInfo("Đã Kết Nối", liblog.Colors["Y1"])
 					}
 
 				} else if noticeType == "Alert" || noticeType == "Warning" {
@@ -278,6 +278,6 @@ func (p *Psiphon) Start() {
 
 		time.Sleep(200 * time.Millisecond)
 
-		p.LogInfo(fmt.Sprintf("Reconnecting (%s)", libutils.BytesToSize(p.KuotaData.Port[p.ListenPort]["all"])), liblog.Colors["G1"])
+		p.LogInfo(fmt.Sprintf("Đang Kết Nối Lại(%s)", libutils.BytesToSize(p.KuotaData.Port[p.ListenPort]["all"])), liblog.Colors["G1"])
 	}
 }
