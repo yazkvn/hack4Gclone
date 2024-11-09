@@ -93,7 +93,7 @@ func (p *Psiphon) LogInfo(message string, color string) {
 
 func (p *Psiphon) LogVerbose(message string, color string) {
 	if p.Verbose {
-		p.LogInfo(fmt.Sprintf("%[1]sVERBOSE%[3]s %[2]s::%[3]s %[1]s", color, liblog.Colors["P1"], liblog.Colors["CC"])+message, color)
+		p.LogInfo(fmt.Sprintf("%[1]sVERBOSE%[3]s %[2]s::%[3]s %[1]s", color, liblog.Colors["R1"], liblog.Colors["R1"])+message, color)
 	}
 }
 
@@ -143,7 +143,7 @@ func (p *Psiphon) Start() {
 		)
 	}
 
-	p.LogInfo("Đang Kết Nối", liblog.Colors["G1"])
+	p.LogInfo("Đang Kết Nối", liblog.Colors["R1"])
 
 	for Loop {
 		p.KuotaData.Port[p.ListenPort] = make(map[string]float64)
