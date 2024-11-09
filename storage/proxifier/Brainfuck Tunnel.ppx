@@ -25,7 +25,7 @@
   <ChainList />
   <RuleList>
     <Rule enabled="true">
-      <Name>Localhost</Name>
+      <Name>Máy Chủ</Name>
       <Targets>localhost; 127.0.0.1; %ComputerName%</Targets>
       <Action type="Direct" />
     </Rule>
